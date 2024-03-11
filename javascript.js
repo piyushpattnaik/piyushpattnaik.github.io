@@ -35,16 +35,11 @@ darkModeToggle.addEventListener('click', function () {
 //Loading//
 document.addEventListener("DOMContentLoaded", function () {
     const loadingWrapper = document.querySelector('.loading-wrapper');
-    const header = document.querySelector('.header');
-    const footer = document.querySelector('.footer');
-    const section = document.querySelector('.section');
-
+    const home = document.querySelector('.home');
 
     window.addEventListener('load', function () {
         loadingWrapper.style.display = 'none';
-        header.style.display = 'block';
-        footer.style.display = 'block';
-        section.style.display = 'block';
-
+        home.style.display = 'block';
     });
 });
+
