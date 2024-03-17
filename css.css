@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Global styles */
@@ -29,7 +30,7 @@ body {
     align-items: center;
 }
 
-.nav__logo {
+.text {
     font-size: 1.5em;
 }
 
@@ -89,6 +90,10 @@ footer {
 /* Dark mode styles for specific elements */
 .dark-mode header {
     border-bottom: 1px solid #444;
+    color: white;
+}
+
+.dark-mode i {
     color: white;
 }
 
@@ -197,3 +202,12 @@ a {
 .home {
     display: none;
 }
+
+material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
+
