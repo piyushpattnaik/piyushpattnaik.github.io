@@ -21,7 +21,7 @@ body {
 /* Header styles */
 .header {
     color: black;
-    padding: 0.5% 0;
+    padding: 10px 0;
     backdrop-filter: blur(10px);    /* Adds blur effect */
     position: fixed;
     top: 0;
