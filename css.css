@@ -21,7 +21,12 @@ body {
 /* Header styles */
 .header {
     color: black;
-    padding: 20px 0;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);    /* Adds blur effect */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav {
