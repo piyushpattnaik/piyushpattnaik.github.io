@@ -45,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Disable right-click context menu
 document.addEventListener('contextmenu', event => event.preventDefault());
-
