@@ -44,6 +44,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Disable right-click context menu
-document.addEventListener('contextmenu', event => {
-    event.preventDefault();
+document.addEventListener('contextmenu', event => {event.preventDefault();});
+
+const nav = document.querySelector(".nav"),
+    navOpenBtn = document.querySelector(".navOpenBtn"),
+    navCloseBtn = document.querySelector(".navCloseBtn");
+
+navOpenBtn.addEventListener("click", () => {
+    nav.classList.add("openNav");
+    nav.classList.remove("openSearch");
+    searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+    nav.classList.remove("openNav");
+});
+// JavaScript to close nav when links are clicked
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const navCloseBtn = document.querySelector('.navCloseBtn');
+    const nav = document.querySelector('.nav');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('openNav');
+        });
+    });
+
+    navCloseBtn.addEventListener('click', () => {
+        nav.classList.remove('openNav');
+    });
 });

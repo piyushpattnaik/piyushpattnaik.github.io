@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Cedarville+Cursive&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
@@ -34,14 +35,18 @@
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <div class="text" style="font-weight: bold; font-family: Borel, cursive;">Hi, I am Piyush :)</div>
-                    <div class="nav__menu">
-                        <a href="#about" style="font-family: Open Sans, sans-serif;">About</a>
-                        <a href="#experience" style="font-family: Open Sans, sans-serif;">Experience</a>
-                        <a href="#resume" style="font-family: Open Sans, sans-serif;">Resume</a>
-                        <button id="dark-mode-toggle" class="toggle" style="margin-left: 20px; border: 0;background-color: transparent;"><i
+                    <div class="text" style="font-weight: bold; font-family: Borel, cursive; font-size: 1.5em;">Hi, I am Piyush :)</div>
+                    <i class="uil uil-bars navOpenBtn"></i>
+                    <ul class="nav-links">
+                        <i class="uil uil-times navCloseBtn" style="color: white;"></i>
+                        <li><a href="#about" style="font-family: Open Sans, sans-serif;">About</a></li>
+                        <li><a href="#experience" style="font-family: Open Sans, sans-serif;">Experience</a></li>
+                        <li><a href="#resume" style="font-family: Open Sans, sans-serif;">Resume</a></li>
+                        <li><a href="#inspiration" style="font-family: Open Sans, sans-serif;">Inspiration</a></li>
+                        <li><a href="#contact" style="font-family: Open Sans, sans-serif;">Contact</a></li>
+                        <button id="dark-mode-toggle" class="toggle" style="margin-right: 15px; border: 0;background-color: transparent;"><i
                                 class="fas fa-moon"></i></button>
-                    </div>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -76,9 +81,14 @@
             </div>
         </section>
 
-        <img src="./Assets/Quote.png" alt="Quote" style="width: 100%; padding: 10px;">
+        <section id="inspiration" class="section">
+            <div class="container">
+                <h1>Inspiration</h1>
+                <img src="./Assets/Quote.png" alt="Quote" style="width: 100%; padding: 10px;">
+            </div>
+        </section>
         
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="social-media">
                 <a href="https://linkedin.com/in/piyushpattnaik" target="_blank" class="linkedin"><i
                         class="fab fa-linkedin"></i></a>
